@@ -1,7 +1,6 @@
 ```
-git submodule update --init --recursive
-mkdir -p ~/.vim/autoload ~/.vim/bundle && \
-curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
-cd ~/ && ln -s ~/.vim/.vimrc
-cd ~/.vim/bundle/YouCompleteMe && ./install.py
+git submodule update --init --recursive # Download submodules
+cd ~/ && ln -s ~/.vim/.vimrc # Symbolic link on .vimrc
+cd ~/.vim/bundle/YouCompleteMe && ./install.py # Install YouCompleteMe
+cd ~/.vim/bundle/vimproc.vim && make # Install vimproc
 ```
