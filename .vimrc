@@ -3,11 +3,13 @@ syntax on
 filetype plugin indent on
 set number
 set background=dark
-set omnifunc=csscomplete#CompleteCSS
+autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
+autocmd FileType php setlocal omnifunc=phpcomplete#CompletePHP
 let g:solarized_termcolors = 256
 let g:airline_theme='gruvbox'
 let g:airline_powerline_fonts = 1
 set backspace=indent,eol,start
+set tags+=.ctags
 
 colorscheme gruvbox 
 
@@ -52,4 +54,4 @@ let g:NERDTreeIndicatorMapCustom = {
 
 " Shortcut to toggle nerdtree
 map <C-n> :NERDTreeTabsToggle<CR>
-
+map <C-p> :CommandT<CR>
