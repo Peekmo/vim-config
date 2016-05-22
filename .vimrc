@@ -10,6 +10,7 @@ let g:airline_theme='gruvbox'
 let g:airline_powerline_fonts = 1
 set backspace=indent,eol,start
 set tags+=.ctags
+let g:go_fmt_command = "goimports"
 
 colorscheme gruvbox 
 
